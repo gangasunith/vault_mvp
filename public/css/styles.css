@@ -1,0 +1,263 @@
+/* GENERAL STYLES */
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #1d1f33;
+}
+
+header {
+  background-color: #1d1f33;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #1d1f33;
+}
+
+
+/* Home page styling */
+.home-container {
+  text-align: center;
+  margin: 50px auto;
+  font-family: 'Manrope', sans-serif;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.home-container a {
+  color: #ffffff;
+  background-color: #007bff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+}
+
+.home-container a:hover {
+  background-color: #0056b3;
+}
+
+/* BUTTONS */
+a.btn-add, a.btn-edit, button.btn-delete, button.submit-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+a.btn-add {
+  background-color: #4CAF50;
+  color: #fff;
+  margin: 10px auto;
+  display: inline-block;
+}
+
+a.btn-edit {
+  background-color: #2196F3;
+  color: #fff;
+  margin-right: 5px;
+}
+
+/* button.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+} */
+
+button.submit-btn {
+  background-color: #1d1f33;
+  color: #fff;
+}
+
+/* FORM STYLING */
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="url"],
+form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Form styling */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Manrope', sans-serif;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+form.inline-btn {
+  display: inline;       
+  margin: 0;             
+  padding: 0;            
+}
+button.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 12px;  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button.btn-delete:hover {
+  background-color: #d32f2f; 
+}
+
+
+/* TABLE STYLING (Vault) */
+table.vault-table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+table.vault-table th, table.vault-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+table.vault-table th {
+  background-color: #1d1f33;
+  color: white;
+}
+
+table.vault-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.vault-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* LINKS */
+a {
+  color: #2196F3;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1d1f33;
+  color: #fff;
+  margin-top: 30px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  table.vault-table, form {
+    width: 95%;
+  }
+
+  header nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

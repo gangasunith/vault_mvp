@@ -1,0 +1,33 @@
+<h1>My Vault</h1>
+<a href="/vault/add" class="btn-add">Add New Item</a>
+<table class="vault-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Username</th>
+      <th>Password</th>
+      <th>URL</th>
+      <th>Notes</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% items.forEach(item => { %>
+      <tr>
+        <td><%= item.title %></td>
+        <td><%= item.username %></td>
+        <td><%= item.password %></td>
+        <td><a href="<%= item.url %>" target="_blank"><%= item.url %></a></td>
+        <td><%= item.notes %></td>
+        <td>
+          <a href="/vault/edit/<%= item._id %>" class="btn-edit">Edit</a> 
+          <form action="/vault/delete/<%= item._id %>" method="POST" class="inline-btn" style="display:inline">
+            <button type="submit" class="btn-delete">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+

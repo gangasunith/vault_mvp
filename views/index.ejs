@@ -1,0 +1,15 @@
+
+<div class="home-container">
+  <h1>Welcome to Vault App</h1>
+  <p>Store your credentials securely.</p>
+
+  <% if (!user) { %>
+    <p>
+      <a href="/register">Create an account</a> 
+      or 
+      <a href="/login">Log in</a> to start.
+    </p>
+  <% } else { %>
+    <p><a href="/vault">Go to your vault</a></p>
+  <% } %>
+</div>
